@@ -18,7 +18,7 @@ The tool offers flexibility by introducing your own experimental data. Required 
 
 The datafiles you will use have these conditions:
 
-- Either .xlsx or .csv format can be used.
+- You should use .csv format.
 - Data needs to have specific headers (example is below).
 - Avoid reporting data for zero composition either from liquid or vapor phase.
 
