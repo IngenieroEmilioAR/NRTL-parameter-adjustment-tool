@@ -14,7 +14,7 @@ The tool offers flexibility by introducing your own experimental data. Required 
 - Vapor and liquid composition for a particular component at different temperatures in Kelvin. 
 - It is also needed (for both components) the coefficients for the Antoine equation in the form log10(P) = A - B/(T-C), where P is in mmHg and T in °C.
 
-> Please, check in example experimental data the files "example simple data"
+> Please, check in example experimental data file for examples for the structure.
 
 The datafiles you will use have these conditions:
 
