@@ -14,7 +14,7 @@ from matplotlib.figure import Figure
 
 from v00.ViewGraph import Graph
 from v00.ViewStatus import Status
-#from v00.ViewSensitivity import SensitivityDialog 
+from v00.ViewSensitivity import SensitivityDialog 
 
 import c00.OpenDataFile as odf
 
@@ -160,11 +160,11 @@ class ViewClass(qtw.QWidget):
             clicked = self.run_Function
             )
 
-        # self.sensitivity_analysis_button = qtw.QPushButton(
-        #     "Sensitivity Analysis",
-        #     self,
-        #     clicked = self.sensitivity_analysis_function
-        #     )
+        self.sensitivity_analysis_button = qtw.QPushButton(
+            "Sensitivity Analysis",
+            self,
+            clicked = self.sensitivity_analysis_function
+            )
 
 
 
@@ -182,7 +182,7 @@ class ViewClass(qtw.QWidget):
         self.layout_entry_optim.addWidget(self.lineedit_particles_or_population, 3, 1, 1, 2)
         self.layout_entry_optim.addWidget(self.lineedit_steps_iterations, 4, 1, 1, 2)
         self.layout_entry_optim.addWidget(self.run_button, 5, 1, 1, 1)
-        #self.layout_entry_optim.addWidget(self.sensitivity_analysis_button, 5, 2, 1, 1)
+        self.layout_entry_optim.addWidget(self.sensitivity_analysis_button, 5, 2, 1, 1)
 
     #pending extention
     def status_Widgets(self):
